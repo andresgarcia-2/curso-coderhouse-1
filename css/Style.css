@@ -1,0 +1,235 @@
+/*
+1- llamr a todas las fuentes tipograficas
+2-escribir el reset
+3-llamar a todas
+4-
+5-
+.bungee-shade-regular {
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+/*paleta de colores 
+#F7F7F7
+#FFB22C
+#854836
+#000000
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin:0 ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    background-color: rgb(255, 255, 0); 
+    border-bottom: 1px black;
+    justify-content: space-evenly;
+    align-items:baseline;
+
+}
+
+.fondo-paginas {
+    background-color: white;
+    border-radius: 15px;
+}
+.navbar {
+    background-color: yellow;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+style
+        ul {
+            column-count: 5; /*nuemro de columnas*/
+            column-gap: 1px; /*espacio entre columnas */
+        }
+        
+        
+        body h1 {
+            font-family: "Bungee Inline", sans-serif;
+            font-weight: 400;
+            font-style:normal;
+
+        }
+
+        body h3 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+        nav a {
+            font-weight: 600;
+            padding-right: 10px;
+        }
+
+        nav a:hover{
+            color: white;
+        }
+        
+        .quienesSomos  {
+            text-align: center;
+        }
+        .quienesSomos2{
+            text-align: center;
+        }
+        .quienesSomos3 {
+            text-align: center;
+            
+        }
+
+        .separacion {
+            padding: 50px 12px;
+        }
+
+        .grid-servicios{
+            display: grid;
+            grid-template-columns: 33,33% 33,33% 33,33%;
+            grid-template-rows: 23,33%  23,33%  23,33%;
+            grid-template-areas: 
+            "titulos titulos titulos"
+            "servicio-1 servicio-2 servicio-3"
+            "servicio-4 servicio-5 servicio-6";
+
+            .titulos{
+                grid-area: titulos;
+                text-align: center;
+            }
+            
+            .servicio-1{
+                grid-area: servicio-1;
+                text-align: center;
+            }
+
+            .servicio-2{
+                grid-area: servicio-2;
+                text-align: center;
+            }
+
+            .servicio-3{
+                grid-area: servicio-3;
+                text-align: center;
+            }
+
+            .servicio-4{
+                grid-area: servicio-4;
+                text-align: center;
+            }
+
+            .servicio-5{
+                grid-area: servicio-5;
+                text-align: center;
+                place-content: center;
+
+            }
+
+            .servicio-6{
+                grid-area: servicio-6;
+                text-align: center;
+
+            }
+
+            img {
+                border-radius: 100px;
+            }
+        }
+
+        @media (max-width:320px) {
+            .grid-servicios{
+                grid-template-areas: 
+                "titulos titulos"
+                "servicio-1 servicio-2"
+                "servicio-3 servicio-4"
+                "servicio-6 servicio-5";
+
+                img {
+                border-radius: 140px;
+            }
+            }
+            
+            
+            
+        }
+
+
+        .boton {
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 15px;
+            border: 2px solid rgba(0,0,0,);
+            box-shadow: 2px 2px 10px rgba(0,0,0);
+            background-color: yellow;
+        }
+        
+        button:hover{
+            background-color: rgb(133, 133, 3);
+        }
+
+.section-principal {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    color: white;
+    background-image:url(../IMG/foto1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pie {
+    background-color: rgb(243, 243, 106);
+}
+
+.contenedor {
+    width: 100%;
+    background-color:rgb(230, 230, 106);
+    background-size:  100%;
+}
+        
+        /* display: flex => horizontal y se ponia en nowrap
+
+        flex=direction => raw / column
+        flex=wrap => que los elementos fueran flexibles o no
+
+        oara mover los elementos simepre y cuando
+
+        justify-content / align-items
+
+        grids=>
+
+        figure = solo cuando una imagen tiene epigrafe con figcaption
+        si no figure solo
+        /* class => clases ( son las que mas vamos a usar, me permiten a mi reutilizarlas)
+        id => identificadores unicos (solamente se usa una vez por sitio, se reserva para javascript)
+
+        nomenclatura en codigo =>
+
+        Noticias index
+
+        camelCase=>noticiasIndex
+        kebab =>noticias-index
+        snake_case =>noticias_index
+        BEM => BLOQUE_ELEMENTO-MODIFICADOR
+
+        pseudoelemento
+        */
