@@ -148,24 +148,69 @@ style
                 border-radius: 100px;
             }
         }
+        
+        @media (max-width:320px ){
 
-        @media (max-width:320px) {
+            .navbar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .contenedor2 {
+                display: flex;
+                flex-direction: column;
+            }
             .grid-servicios{
                 grid-template-areas: 
                 "titulos titulos"
-                "servicio-1 servicio-2"
-                "servicio-3 servicio-4"
-                "servicio-6 servicio-5";
+                "servicio-1" 
+                "servicio-2"
+                "servicio-3" 
+                "servicio-4"
+                "servicio-6" 
+                "servicio-5";
 
-                img {
+            img {
+                width: 250px;
                 border-radius: 140px;
             }
             }
             
             
-            
         }
 
+
+        @media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .grid-servicios{
+                grid-template-areas: 
+                "titulos titulos"
+                "servicio-1 servicio-2"
+                "servicio-3 servicio-4"
+                "servicio-6 servicio-5";
+    }
+    img {
+                width: 260px;
+                border-radius: 90px;
+            }
+}
+
+    @media (min-width:2560px ) {
+            .grid-servicios{
+            grid-template-areas: 
+            "titulos titulos titulos"
+            "servicio-1 servicio-2 servicio-3"
+            "servicio-4 servicio-5 servicio-6";
+            }
+        }
+        
 
         .boton {
             font-size: 1,5em;
@@ -205,7 +250,309 @@ style
     background-color:rgb(230, 230, 106);
     background-size:  100%;
 }
-        
+.presu-titulos{
+    margin: 20px;
+    text-align: center;
+}
+.presu-titulos p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 28px;
+}
+.presu-titulos h2{
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    text-align: center;
+}
+.viñetas{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carta-1{
+    width: 350px;
+    height: 165px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+}
+
+.carta-1 p{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carta-2{
+    width: 350px;
+    height: 210px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 35px;
+    padding:10px;
+}
+
+.carta-2 p{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carta-3{
+    width: 350px;
+    height: 165px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 35px;
+    padding:10px;
+}
+
+.carta-3 p{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.viñetas-2{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carta-4{
+    width: 320px;
+    height: 245px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+}
+
+.carta-4 h4{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carta-4 p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carta-5{
+    width: 320px;
+    height: 240px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+}
+
+.carta-5 h4{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.carta-5 p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carta-6{
+    width: 360px;
+    height: 240px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+}
+
+.carta-6 h4{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carta-6 p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width:320px ){
+    .viñetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .carta-1{
+    width: 300px;
+    height: 205px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .carta-2{
+    width: 300px;
+    height: 210px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .carta-3{
+    width: 300px;
+    height: 210px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .viñetas-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .carta-4{
+    width: 300px;
+    height: 285px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .carta-5{
+    width: 300px;
+    height: 240px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .carta-6{
+    width: 300px;
+    height: 290px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+    }
+}
+
+@media (max-width:768px ) {
+    .carta-1{
+    width: 250px;
+    height: 260px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .carta-2{
+    width: 250px;
+    height: 260px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .carta-3{
+    width: 250px;
+    height: 260px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .carta-4{
+    width: 300px;
+    height: 290px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .carta-5{
+    width: 300px;
+    height: 290px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+    }
+
+    .carta-6{
+    width: 300px;
+    height: 340px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    padding:10px;
+    }
+}
         /* display: flex => horizontal y se ponia en nowrap
 
         flex=direction => raw / column
